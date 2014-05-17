@@ -42,8 +42,8 @@ Find the local ip address of the raspberry pi,
  * MiniDlna/UPnP shows up as personalCloud in all MiniDlna devices and reads all the media directory present in /media/hdd1 directory.
 
 #Furether Configuration
- * Remote Access using PageKite (signup at pagekite.org)- a reversy proxe application to access beaglebaord from outside localnetwork.
-    * Edit script at /startPageKite and switch the KITENAME variable to kite created for remote access, execute the script and you should be able to access the applications at whateverPageKiteName.pagekite.me/owncloud ..... 
+ * Remote Access using PageKite (signup at pagekite.org)- a reversy proxe application to access systems outside localnetwork.
+    * Edit script at /startPageKite and switch the KITENAME variable to kite created at pagekite.net, execute the script and you should be able to access the applications at whateverPageKiteName.pagekite.me/owncloud ..... 
  * For Push notifications edit /notifyPushBullet script with your info at pushbullet.com (signup and download app at pushbullet.com)  
  
 ## Contributors
