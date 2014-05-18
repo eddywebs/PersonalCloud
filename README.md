@@ -15,15 +15,19 @@ No subscription fee ! minimal techincal skills required.
 
 ## Installation
 
-Download the image from : Coming shortly...
+ * Download the image from : http://eddywebs.com/personalCloud.zip
 
-Flash to SD card (min 8GB capacity required)
+ * Flash to SD card (min 8GB capacity required)
 
-Power up the raspberryPi and mount the external drive. You may use guide at  >> http://www.techjawab.com/2013/06/how-to-setup-mount-auto-mount-usb-hard.html
+ * Power up the raspberryPi and connect it a network.
+  * It is advised to use Ethernet connection for faster performance
+  * In case wireless dongle is used: wifi network can be defined at /etc/wpa_supplicant/wpa_supplicant.conf which autoconnects at boot.
 
-Make sure to mount the external hard dive to /media/hdd1 mount point under the user: www-data, group: www-data.
-This is because all the applications are set to read the data from directory /media/hdd1. 
-This maybe changed/added by adjusting package configurations accordingly.
+
+ * Mount the external drive. You may use guide at  >> http://www.techjawab.com/2013/06/how-to-setup-mount-auto-mount-usb-hard.html
+
+  * Make sure to mount the external hard dive to /media/hdd1 mount point under the user: www-data, group: www-data. This is because all the applications are set to read the data from directory /media/hdd1. 
+  This maybe changed/added by adjusting package configurations accordingly.
 
 #Usage and Logins
 
@@ -44,7 +48,8 @@ Find the local ip address of the raspberry pi,
 #Furether Configuration
  * Remote Access using PageKite (signup at pagekite.org)- a reversy proxe application to access systems outside localnetwork.
     * Edit script at /startPageKite and switch the KITENAME variable to kite created at pagekite.net, execute the script and you should be able to access the applications at whateverPageKiteName.pagekite.me/owncloud ..... 
- * For Push notifications edit /notifyPushBullet script with your info at pushbullet.com (signup and download app at pushbullet.com)  
+ * Push notifications on download-complete using aria2 (signup and download app at pushbullet.com) 
+ * edit /notifyPushBullet script with your info at pushbullet.com  
  
 ## Contributors
 
